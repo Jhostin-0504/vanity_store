@@ -5,9 +5,9 @@ Create TABLE users(
 	lastname VARCHAR (255) NOT NULL,
 	phone VARCHAR (30) NOT NULL UNIQUE,
 	image VARCHAR (255) NULL,
+	password VARCHAR (255) NOT NULL,
 	is_available BOOLEAN NULL,
 	session_token VARCHAR (255) NULL,
-	password VARCHAR (255) NOT NULL,
 	created_at TIMESTAMP(0) NOT NULL,
 	update_at TIMESTAMP(0) NOT NULL
 ); 
