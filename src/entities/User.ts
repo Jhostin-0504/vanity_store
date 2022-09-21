@@ -22,15 +22,21 @@ export class User extends BaseEntity {
     lastname: string
 
     @Column()
-    phone: number
+    phone: string
 
-    @Column()
+    @Column({
+        nullable:true
+    })
     image: string
 
-    @Column()
+    @Column({
+        nullable:true
+    })
     is_available: boolean
 
-    @Column()
+    @Column({
+        nullable:true
+    })
     session_token: string
 
     @Column()
